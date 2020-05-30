@@ -30,7 +30,6 @@ parser.add_option("-n", "--num_rois", type="int", dest="num_rois",
 parser.add_option("--config_filename", dest="config_filename", help=
 				"Location to read the metadata related to the training (generated when training).",
 				default="config.pickle")
-parser.add_option("--network", dest="network", help="Base network to use. Supports vgg or resnet50.", default='resnet50')
 parser.add_option("--write", dest="write", help="to write out the image with detections or not.", action='store_true')
 parser.add_option("--load", dest="load", help="specify model path.", default=None)
 (options, args) = parser.parse_args()
