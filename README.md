@@ -5,6 +5,7 @@ faster R-CNN in Keras and Tensorflow 2<br>
 - RPN (region proposal layer) can be trained separately!<br>
 - VGG16 support<br>
 - prediction script included<br>
+- own dataset :)<br> 
 
 <h1>Frameworks</h1><br>
 - Tensorflow==2.2.0<br>
