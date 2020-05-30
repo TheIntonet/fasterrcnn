@@ -26,7 +26,7 @@ It's better to train first the RPN, it is much handlier.<br><br>
 <pre>
 <code>
 # required arguments
-python train_rpn.py -p data.txt
+python train_rpn.py -p data.txt<br>
 # all arguments
 python train_rpn.py -p [path_to_annotation_file] -n [num_rois] --hf [horizontal_flips] -vf [vertical_flips] --rot [rot_90] --num_epochs [epochs] --config_filename [path_to_config_file] --elen [epoch_length] --source [source_of_the_weight_file] --output_weight_path [output_weight_path] --input_weight_path [rpn_input_weight]
 </code>
