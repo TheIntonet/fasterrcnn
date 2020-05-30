@@ -76,3 +76,15 @@ Average number of overlapping bounding boxes from RPN = 1.3 for 10 previous iter
  6/10 [=================>............] - ETA: 38s - rpn_cls: 1.1460 - rpn_regr: 0.0317 - detector_cls: 0.2123 - detector_regr: 0.2767 - average number of objects: 1.6667
 </code>
 </pre>
+
+# 4. predict on your images
+To predict your images you have to put them all in a folder and the script shows you the prediction.
+<pre>
+<code>
+#required arguments:
+python predict.py -p [path_to_the_image_directory]
+
+#all aruments:
+python predict.py -p [path_to_the_image_directory] -n [num_rois] --config_filename [path_to_config_file]
+</code>
+</pre>
