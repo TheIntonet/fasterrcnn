@@ -1,0 +1,8 @@
+<config>
+  <best>
+    <rpn></rpn>
+    <rpnloss></rpnloss>
+    <all></all>
+    <allloss><allloss>
+  </best>
+</config>
