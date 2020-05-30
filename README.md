@@ -85,6 +85,6 @@ To predict your images you have to put them all in a folder and the script shows
 python predict.py -p [path_to_the_image_directory]
 
 #all aruments:
-python predict.py -p [path_to_the_image_directory] -n [num_rois] --config_filename [path_to_config_file]
+python predict.py -p [path_to_the_image_directory] -n [num_rois] --config_filename [path_to_config_file] --write [save_the_prediction_result] --load [path_to_model]
 </code>
 </pre>
