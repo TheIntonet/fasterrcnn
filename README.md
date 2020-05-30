@@ -1,11 +1,13 @@
 # fasterrcnn
 faster R-CNN in Keras and Tensorflow 2<br>
 <h1>What is in here?</h1>
-- simple to understand the code<br>
-- RPN (region proposal layer) can be trained separately!<br>
-- VGG16 support<br>
-- prediction script included<br>
-- own dataset :)<br> 
+<ul>
+  <li>simple to understand the code</li><br>
+  <li>RPN (region proposal layer) can be trained separately!</li><br>
+  <li>VGG16 support</li><br>
+  <li>prediction script included</li><br>
+  <li>own dataset :)</li>
+</ul>
 
 <h1>Frameworks</h1><br>
 - Tensorflow==2.2.0<br>
