@@ -50,6 +50,6 @@ After you have trained your RPN, you can now train the whole network.
 python train_frcnn.py -p data.txt
 
 #all arguments
-python train_frcnn.py -p [path_to_annotation_file] -n [num_rois] --hf [horizontal_flips] -vf [vertical_flips] --rot [rot_90] --num_epochs [epochs] --config_filename [path_to_config_file] --elen [epoch_length] --output_weight_path [output_weight_path] --source [source_of_the_weight_file]  --input_weight_path [rpn_input_weight] --rpn [rpn_weight_path] --opt [optimizers] --elen [epoch_length] --load [path_to_frcnn_model]
+python train_frcnn.py -p [path_to_annotation_file] -n [num_rois] --hf [horizontal_flips] -vf [vertical_flips] --rot [rot_90] --num_epochs [epochs] --config_filename [path_to_config_file] --elen [epoch_length] --output_weight_path [output_weight_path] --source [source_of_the_weight_file]  --input_weight_path [rpn_input_weight] --rpn [rpn_weight_path] --opt [optimizers] --elen [epoch_length] --load [path_to_frcnn_model] --cat [category_to_train_on] --lr [learn_rate]
 </code>
 </pre>
