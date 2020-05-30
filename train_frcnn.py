@@ -49,7 +49,6 @@ parser.add_option("--rpn", dest="rpn_weight_path", help="Input path for rpn.", d
 parser.add_option("--opt", dest="optimizers", help="set the optimizer to use", default="SGD")
 parser.add_option("--elen", dest="epoch_length", help="set the epoch length. def=1000", default=1000)
 parser.add_option("--load", dest="load", help="What model to load", default=None)
-parser.add_option("--dataset", dest="dataset", help="name of the dataset", default="voc")
 parser.add_option("--cat", dest="cat", help="categroy to train on. default train on all cats.", default=None)
 parser.add_option("--lr", dest="lr", help="learn rate", type=float, default=1e-3)
 
