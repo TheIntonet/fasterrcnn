@@ -88,3 +88,12 @@ python predict.py -p [path_to_the_image_directory]
 python predict.py -p [path_to_the_image_directory] -n [num_rois] --config_filename [path_to_config_file] --write [save_the_prediction_result] --load [path_to_model]
 </code>
 </pre>
+
+# Dataset setup
+First you copy all you data images into the dataset/images folder. Then you run the script 'resize_img.py' to resize all your images to the optimal size(224, 224, 3) they will get to the dataset\destimges folder. Next you label them all with the <a href="https://github.com/tzutalin/labelImg">labelimg</a> tool and safe the xml files in the dataset/data folder. After that you go back and run the script 'xmltoannotation.py' which create from the xml files one annotation file called data.txt. This file you can copy to the main directory to have simpler access.
+This is the final format:
+<pre>
+<code>
+filepath,x1,y1,x2,y2,class_name
+</code>
+</pre>
