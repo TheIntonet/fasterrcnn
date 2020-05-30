@@ -42,7 +42,7 @@ Epoch 4/50
 </code>
 </pre>
 
-# train the whole Faster-RCNN network!
+# 3. train the whole Faster-RCNN network!
 After you have trained your RPN, you can now train the whole network.
 <pre>
 <code>
@@ -51,5 +51,28 @@ python train_frcnn.py -p data.txt
 
 #all arguments
 python train_frcnn.py -p [path_to_annotation_file] -n [num_rois] --hf [horizontal_flips] -vf [vertical_flips] --rot [rot_90] --num_epochs [epochs] --config_filename [path_to_config_file] --elen [epoch_length] --output_weight_path [output_weight_path] --source [source_of_the_weight_file]  --input_weight_path [rpn_input_weight] --rpn [rpn_weight_path] --opt [optimizers] --elen [epoch_length] --load [path_to_frcnn_model] --cat [category_to_train_on] --lr [learn_rate]
+
+Epoch 1/4
+10/10 [==============================] - 94s 9s/step - rpn_cls: 0.2273 - rpn_regr: 0.0063 - detector_cls: 0.0781 - detector_regr: 0.0825 - average number of objects: 1.2000
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 1.2
+Classifier accuracy for bounding boxes from RPN: 0.9499999940395355
+Loss RPN classifier: 0.2691028459822974
+Loss RPN regression: 0.009440940673084697
+Loss Detector classifier: 0.1330762797035277
+Loss Detector regression: 0.08800292604137212
+Elapsed time: 94.21539258956909
+Epoch 2/4
+Average number of overlapping bounding boxes from RPN = 1.2 for 10 previous iterations
+10/10 [==============================] - 95s 9s/step - rpn_cls: 2.2784 - rpn_regr: 0.0369 - detector_cls: 0.5874 - detector_regr: 0.2051 - average number of objects: 1.3000
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 1.3
+Classifier accuracy for bounding boxes from RPN: 0.8899999856948853
+Loss RPN classifier: 1.6048255547648995
+Loss RPN regression: 0.017651171068428083
+Loss Detector classifier: 0.3393111705780029
+Loss Detector regression: 0.2202323233243078
+Elapsed time: 94.70645260810852
+Epoch 3/4
+Average number of overlapping bounding boxes from RPN = 1.3 for 10 previous iterations
+ 6/10 [=================>............] - ETA: 38s - rpn_cls: 1.1460 - rpn_regr: 0.0317 - detector_cls: 0.2123 - detector_regr: 0.2767 - average number of objects: 1.6667
 </code>
 </pre>
